@@ -144,4 +144,4 @@ function stringManipulate(str) {
 }
 stringManipulate("Yos*si");
 stringManipulate("Yos@si");
-stringManipulate("Yos₪si");
+stringManipulate("Yos₪si"); 
