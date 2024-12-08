@@ -51,3 +51,97 @@ console.log("text greater then 3 chars: " + nunGtThree);
 console.log("Yossi", "Yafa", "Aya", 9999);
 nunGtThree = gtFromThreeChars("Yossi", "Yafa", "Aya", 9999);
 console.log("text greater then 3 chars: " + nunGtThree);
+
+// ---- Ex 3 -----
+console.log(" ");
+console.log(" --- Ex 3 ----"); 
+
+function replaceChar() {
+    let inputV = document.getElementById('intext').value;
+    
+    if(String(inputV).indexOf('A') != -1) {
+       let newStr = String(inputV).replaceAll("A","a");
+       document.getElementById('intext').value = newStr;
+    }
+}
+
+
+// ---- Ex 4 -----
+console.log(" ");
+console.log(" --- Ex 4 ----"); 
+function printNegatPosOddEven(num) {
+    let numStatus = "";
+    if(typeof(num) == "number")   {
+        if(num > 0) {
+            numStatus = "positive";
+        } else if(num < 0) {
+            numStatus = "negative";
+        } else {
+            numStatus = "zero";
+        } 
+
+        if(num % 2 != 0) {
+            numStatus = numStatus + " " + "odd";
+        } else {
+            numStatus = numStatus + " " + "even";
+        }
+
+        console.log(num + " is: " + numStatus);
+    } else {
+        console.log(num + " is not a number");
+    }
+ 
+}
+
+printNegatPosOddEven(5);
+printNegatPosOddEven(4);
+printNegatPosOddEven(-10);
+printNegatPosOddEven(-13);
+printNegatPosOddEven("xxxx");
+
+
+// ---- Ex 5 -----
+console.log(" ");
+console.log(" --- Ex 5 ----"); 
+function removeChars(str) {
+    if(typeof(str) == "string") {
+        let s1 = String(str);
+        let chFirst = s1.charAt(0).normalize();
+        let chLast = s1.charAt(s1.length-1).normalize();
+        let newStr = ""
+        if(chFirst === chLast) {
+            newStr = s1.replaceAll(chFirst,"");
+        }
+        console.log("newStr: " + newStr);
+    }
+
+}
+removeChars("AyossiA");
+
+// ---- Ex 6 -----
+console.log(" ");
+console.log(" --- Ex 6 ----"); 
+function stringManipulate(str) {
+    if(typeof(str) == "string") {
+        let newStr = "";
+        let s1 = String(str);
+
+        if(s1.includes('*')) {
+            newStr = s1.replaceAll('*',"");
+        }
+
+        if(s1.includes('@')) {
+            newStr = '*' + s1 + '*' ;
+        }
+        
+        if(s1.includes('₪')) {
+            newStr = 'new shekel' ;
+        }
+
+        console.log("input str: " + str + "  --- newStr = " + newStr);
+
+    }
+}
+stringManipulate("Yos*si");
+stringManipulate("Yos@si");
+stringManipulate("Yos₪si");
