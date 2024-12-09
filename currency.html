@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <span id="currencySpan">
+        <label for="currency">Choose a Currency:</label>
+        <select name="currency" id="currency">
+            <option value="Dolar">Dolar</option>
+            <option value="Euro">Euro</option>
+            <option value="Sterling">Sterling</option>
+        </select>
+    </span>
+    <br><br>
+    <span>
+        <label for="Amount">Enter Amount:</label>
+        <input id="ammount" type="text" name="ammount" value="" />
+    </span>
+    <br><br>
+    <span>
+        <input id="calcButton" type="button" value="calculate Shekel" onclick="calculateShekel()" />
+    </span>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+#calcButton {
+    background-color: dodgerblue;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 116px;
+    height: 36px;
+}
+
+#currencySpan {
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-color: black;
+}
+
+#ammount {
+    width: 180px;
+    height: 20px;
+}
+
+#currency {
+    width: 155px;
+    height: 24px;
+}
+
+label {
+    font-size: large;
+    font-weight: bold;
+}
